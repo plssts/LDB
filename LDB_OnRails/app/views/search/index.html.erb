@@ -1,0 +1,19 @@
+<div class="content-container signup-content-container" >
+  <%= form_for :search, :url => { :action => 'show' }, :html=>{:class=>"user-form"} do |form| %>
+
+      <div style="display: block; width: 100%;height: 30px;"><div style="width: 100px;float: left;">Projects: </div><input type="checkbox" name="proj" value="Project" style="width: 100px;float: left;"></div>
+      <div style="display: block; width: 100%;height: 30px;"><div style="width: 100px;float: left;">Work groups: </div><input type="checkbox" name="wgs" value="WorkGroup" style="width: 100px;float: left;"></div>
+      <div style="display: block; width: 100%;height: 30px;"><div style="width: 100px;float: left;">Users: </div><input type="checkbox" name="usr" value="User" style="width: 100px;float: left;"></div>
+      <div style="display: block; width: 100%;height: 30px;"><div style="width: 100px;float: left;">Tasks: </div><input type="checkbox" name="tsk" value="Task" style="width: 100px;float: left;"></div>
+      <div style="display: block; width: 100%;height: 30px;"><div style="width: 100px;float: left;">Notes: </div><input type="checkbox" name="note" value="NotesManager" style="width: 100px;float: left;"></div>
+      <div style="display: block; width: 100%;height: 30px;"><div style="width: 100px;float: left;">Orders: </div><input type="checkbox" name="ordr" value="Order" style="width: 100px;float: left;"></div>
+     <div style="display: block; width: 100%;">
+      <div style="float: left; padding-right: 100px;"><%= form.label 'value' %></div><br>
+      <%= form.text_field :value %>
+    </div>
+
+    <p>
+      <%= form.submit 'Search' %>
+    </p>
+  <% end %>
+</div>

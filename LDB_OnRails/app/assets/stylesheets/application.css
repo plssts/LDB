@@ -1,0 +1,150 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body{
+   height: 100% !important;
+   font-family: 'Roboto', sans-serif;
+   background-image: url('/images/bkgr.png');
+   background-color: #cccccc;
+ }
+
+ a {
+   text-decoration: underline;
+   color: #444444;
+   -webkit-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+ }
+
+a:active, a:focus {
+   outline: 0;
+ }
+
+a:hover {
+  color: rgb(230, 190, 3);
+}
+
+ .nav-bar-container {
+   width: 100%;
+   height: 60px;
+   background-color: #364699;
+   position: fixed;
+   z-index: 10;
+   position: relative;
+ }
+
+ .nav-bar-content-split {
+   float: left;
+ }
+
+ .nav-bar-logo {
+   margin-left: 30px;
+   margin-top: 15px;
+   background-image: url('/images/ldb.png');
+   background-size: 35px 30px;
+   width: 35px;
+   height: 30px;
+ }
+
+ .nav {
+   position: absolute;
+   right: 0;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   padding-top: 21px;
+ }
+
+ .nav-link {
+   display: inline;
+   padding-right: 25px;
+   font-size: 15px;
+   color: #ffffff;
+   text-transform: uppercase;
+   position: relative;
+ }
+
+.nav-link a {
+   color: #ffffff;
+   text-decoration: none;
+ }
+
+.nav-link a:hover {
+  color: rgb(230, 190, 3);
+}
+
+.nav-link a.nav-a-active {
+   color: rgb(252, 211, 3);
+   font-style: italic;
+ }
+
+.content {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content-line {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content-container {
+  margin: auto;
+  color: #777777;
+  background: #eeeeee;
+  -webkit-box-shadow: 0px 10px 34px -11px rgba(120,120,120,1);
+  -moz-box-shadow: 0px 10px 34px -11px rgba(120,120,120,1);
+  box-shadow: 0px 10px 34px -11px rgba(120,120,120,1);
+  position: relative;
+}
+
+.default-content-container {
+  width: 700px;
+  height: 400px;
+  padding: 30px;
+  line-height: 30px;
+}
+
+.default-content-container a {
+  background-color: #364699;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.default-content-container a:hover {
+  color: rgb(230, 190, 3);
+}
+
+.wlcm-btn-a{
+  color: #444444;
+  text-decoration: underline;
+}
+
+.wlcm-btn-a:hover {
+  color: rgb(252, 211, 3);
+}
+
+
+.txt-highl {
+  color: #444444;
+}

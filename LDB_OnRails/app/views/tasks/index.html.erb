@@ -1,0 +1,10 @@
+<div class="content-container default-content-container">
+<%= link_to 'Add new task', url_for(:controller => :tasks, :action => :create) %><br><br>
+<span class="txt-highl">All tasks:</span><br>
+<hr>
+<% @tasks.each do |tsk| %>
+  |<%= tsk.id %>| <%= tsk.task %>
+  <%= link_to 'Remove', url_for(:controller => :tasks, :action => :destroy, :task => tsk.task) %>
+  <br>
+<% end %>
+</div>

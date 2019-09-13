@@ -1,0 +1,10 @@
+
+wow:
+  author: user
+  text: example
+  exp: 0
+
+badtext:
+  author: somename
+  text: bad word
+  exp: 0

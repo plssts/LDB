@@ -1,0 +1,21 @@
+<div class="content-container default-content-container">
+<span class="txt-highl">Providers:</span> <br><hr>
+<% @providers.each do |prov| %>
+  <%= prov.name %>
+  <%= link_to 'Delete', url_for(:controller => :materials, :action => :remprov, :id => prov.id) %>
+  <br>
+<% end %>
+<br>
+<%= link_to 'Add provider', url_for(:controller => :materials, :action => :addprov) %><br>
+
+<br><span class="txt-highl">Offers: </span><br><hr>
+<% @materials.each do |mat| %>
+  <%= mat.name %> <%= mat.material %> <%= mat.unit %> <%= mat.ppu %>
+  <%= link_to 'Remove', url_for(:controller => :materials, :action => :remof, :id => mat.id) %>
+  <%= link_to 'Create order', url_for(:controller => :orders, :action => :create, :ppu => mat.ppu, :provider => mat.name, :material => mat.material) %>
+  <br>
+<% end %>
+<br>
+<%= link_to 'Add offer', url_for(:controller => :materials, :action => :addof) %><br>
+<br>
+</div>

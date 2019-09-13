@@ -1,0 +1,12 @@
+require: 'rubocop-rspec'
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+  
+Layout/EndOfLine:
+  EnforcedStyle: native
+
+AllCops:
+  Exclude:
+    - 'main/main.rb'
+    - 'main/submenus/*.rb'

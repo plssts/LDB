@@ -1,0 +1,11 @@
+Entry1:
+ wgid: 5010
+ task: 60
+
+Entry2:
+ wgid: 5010
+ task: 59
+
+Entry3:
+ wgid: 5050
+ task: 58

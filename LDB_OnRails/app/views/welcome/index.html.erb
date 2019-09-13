@@ -1,0 +1,29 @@
+
+
+<div class="content-container welcome-content-container">
+
+  <div class="middle-sep">
+    <div class="scnd-logo">
+    </div>
+
+    <div class="undr-logo-text">
+      Welcome to <span class="txt-highl">LDB</span>!
+      <br>Manage your projects like a pro.
+      <br>Please <span class="txt-highl">login</span> or <span class="txt-highl">sign up</span> to continue.
+      <br><br>100% satisfaction <span class="txt-highl">guaranteed</span>!
+    </div>
+  </div>
+
+  <div class="middle-sep">
+
+    <div class="buttons-wrap">
+      <%= link_to '<div class="action-btn top-btn-margin">Sign Up</div>'.html_safe, url_for(:action => :create, :controller => :users), :html=>{:class=>"wlcm-btn-a"} %>
+
+      <div class="middle-sep-line">
+      </div>
+
+      <%= link_to '<div class="action-btn">Login</div>'.html_safe, url_for(:action => :parse_login, :controller => :users), :html=>{:class=>"wlcm-btn-a"} %>
+    </div>
+  </div>
+
+</div>

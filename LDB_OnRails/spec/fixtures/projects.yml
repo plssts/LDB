@@ -1,0 +1,33 @@
+Projektas1:
+ id: 102050
+ name: Projektas1
+ manager: Tomas
+ status: Deleted
+ budget: 35000.11
+
+Projektas2:
+ name: Projektas2
+ manager: Tomas
+ status: In progress
+ budget: 5000.5
+
+Projektas3:
+ id: 101050
+ name: act
+ manager: Tomas
+ status: In progress
+ budget: 5000
+
+Projektas4:
+ id: 201050
+ name: act8
+ manager: ar@gmail.com
+ status: In progress
+ budget: 200
+
+Projektas5:
+ id: 2018
+ name: nilly
+ manager: 
+ status: In progress
+ budget: 50

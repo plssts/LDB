@@ -1,0 +1,15 @@
+Entry1: 
+ wgid: WG1
+ member: t@a.com
+
+Entry2:
+ wgid: WG1
+ member: some@mail.com
+
+Entry4:
+ wgid: 5020
+ member: some@mail.com
+
+Entry3:
+ wgid: 5050
+ member: dude@mr.eu

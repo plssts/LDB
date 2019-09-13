@@ -1,0 +1,24 @@
+<div class="content-container signup-content-container">
+<%= form_for :project, :url => { :action => 'update' }, :html=>{:class=>"user-form"} do |form| %>
+  <%= form.hidden_field :id, :value => params[:id] %>
+ <p>
+   <%= form.label :manager %><br>
+   <%= form.text_field :manager %>
+ </p>
+  <p>
+   <%= form.label :status %><br>
+   <%= form.select :status, ['Proposed', 'Suspended', 'Postponed', 'Cancelled', 'In progress'] %>
+ </p>
+  <p>
+   <%= form.label :name %><br>
+   <%= form.text_field :name %>
+ </p>
+  <p>
+   <%= form.label :budget %><br>
+   <%= form.text_field :budget %>
+ </p>
+  <p>
+   <%= form.submit 'Edit' %>
+ </p>
+<% end %>
+</div>

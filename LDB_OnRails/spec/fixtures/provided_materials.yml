@@ -1,0 +1,35 @@
+offer1:
+ name: WoodWorks
+ material: Planks
+ unit: 30000
+ ppu: 10
+
+offer2:
+ name: WoodWorks
+ material: Boards
+ unit: 5000
+ ppu: 15.5
+
+offer3:
+ name: SteelPool
+ material: Beams
+ unit: 6520
+ ppu: 48
+
+offer6:
+ name: fake
+ material: Supports
+ unit: 10
+ ppu: 300
+
+offer4:
+ name: SteelPool
+ material: Supports
+ unit: 1000
+ ppu: 30
+
+offer5:
+ name: Choppers
+ material: Planks
+ unit: 350
+ ppu: 20

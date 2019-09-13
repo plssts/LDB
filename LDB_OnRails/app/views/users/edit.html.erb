@@ -1,0 +1,29 @@
+<div class="content-container default-content-container">
+
+  <%= form_for :user, :url => { :action => 'update' }, :html=>{:class=>"user-form"} do |form| %>
+    <p>
+      <%= form.label :email %><br>
+      <%= form.text_field :email, :value => current_user['email'], :readonly => :true %>
+    </p>
+
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name, :value => current_user['name'] %>
+    </p>
+
+    <p>
+      <%= form.label 'last name' %><br>
+      <%= form.text_field :lname, :value => current_user['lname'] %>
+    </p>
+
+    <p>
+      <%= form.label :password %><br>
+      <%= form.password_field :pass, :value => current_user['pass'] %>
+    </p>
+
+    <p>
+      <%= form.submit 'Edit' %>
+    </p>
+  <% end %>
+
+</div>

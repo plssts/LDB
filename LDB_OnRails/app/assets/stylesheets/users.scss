@@ -1,0 +1,49 @@
+.login-content-container {
+  width: 450px;
+  height: 300px;
+}
+
+.signup-content-container {
+  width: 450px;
+  height: 420px;
+}
+
+.user-form {
+  width: 270px;
+  height: 100%;
+  margin: auto;
+  padding-top: 60px;
+  line-height: 30px;
+}
+
+.user-form input {
+  border: none;
+  width: 250px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.user-form input:focus {
+  background-color: #aaaaaa;
+}
+
+.user-form input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #364699;
+}
+
+.user-form input[type="submit"]:hover {
+  color: #222222;
+  background-color: rgb(252, 211, 3);
+  cursor: pointer;
+}

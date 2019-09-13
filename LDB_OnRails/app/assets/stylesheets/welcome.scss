@@ -1,0 +1,73 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome-content-container {
+  width: 700px;
+  height: 400px;
+}
+
+.middle-sep {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.middle-sep-line {
+  position: absolute;
+  height: 300px;
+  width: 2px;
+  left: 350px;
+  top: 50px;
+  background-color: #cfcfcf;
+}
+
+.buttons-wrap {
+  width: 200px;
+  height: 100%;
+  margin: auto;
+}
+
+.action-btn {
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  background-color: #364699;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.buttons-wrap a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.buttons-wrap a:hover {
+  color: #222222;
+}
+
+.action-btn:hover {
+  background-color: rgb(252, 211, 3);
+}
+
+.top-btn-margin {
+  margin-top: 140px;
+}
+
+.scnd-logo {
+  background-image: url('/images/ldb-yel.png');
+  background-size: 100px 90px;
+  width: 100px;
+  height: 90px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.undr-logo-text {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 25px;
+}

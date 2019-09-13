@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LDB</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'reset'%>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-bar-container">
+        <div class="nav-bar-content-split">
+          <div class="nav-bar-logo">
+          </div>
+        </div>
+
+        <div class="nav-bar-content-split">
+          <ul class="nav">
+            <li class="nav-link"><a href="http://localhost:3000">Home</a></li>
+              <% if user_signed_in? %>
+                <li class="nav-link"><%= link_to 'Projects', url_for(:controller => :projects, :method => :index) %></li>
+                <li class="nav-link"><%= link_to 'Work groups', url_for(:controller => :wgs, :method => :index) %></li>
+                <li class="nav-link"><%= link_to 'Tasks', url_for(:controller => :tasks, :method => :index) %></li>
+                <li class="nav-link"><%= link_to 'Materials', url_for(:controller => :materials, :method => :index) %></li>
+                <li class="nav-link"><%= link_to 'Orders', url_for(:controller => :orders, :method => :index) %></li>
+                <li class="nav-link"><%= link_to 'Profile', url_for(:controller => :users, :method => :index) %></li>
+                <li class="nav-link"><%= link_to 'Search', url_for(:controller => :search, :method => :index) %></li>
+                <li class="nav-link"><a href="#" class="nav-a-active">Signed in as <%= current_user['email'] %></a></li>
+                <li class="nav-link"><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+              <% end %>
+          <ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="content-line">
+      <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

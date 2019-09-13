@@ -1,0 +1,24 @@
+Note1:
+ sendr: tg@gmail.com
+ recvr: ar@gmail.com
+ msg: 'Dont forget to do your task'
+
+Note2:
+ sendr: ar@gmail.com
+ recvr: tg@gmail.com
+ msg: 'Any news for me?'
+
+Note3:
+ sendr: tg@gmail.com
+ recvr: other
+ msg: 'Some nonsense'
+
+Note4:
+ sendr: ar@gmail.com
+ recvr: other
+ msg: 'This is nice'
+
+Note5:
+ sendr: other
+ recvr: ar@gmail.com
+ msg: 'No it isnt'

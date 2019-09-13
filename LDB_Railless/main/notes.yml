@@ -1,0 +1,27 @@
+
+default:
+  author: 
+  text:
+  - 'wow
+
+'
+  - 'wow
+
+'
+  - 'ow
+
+'
+  exp: 0
+note1:
+  author: 
+  text:
+  - 'some text here
+
+'
+  - and some here
+  exp: 0
+wow:
+  author: t@a.com
+  text:
+  - 1) do sth
+  exp: 0

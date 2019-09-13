@@ -1,0 +1,5 @@
+<div class="content-container default-content-container">
+<%= @result.each do |res| %>
+  <%= res.join(' ') unless res.eql?('') %>
+<% end %>
+</div>

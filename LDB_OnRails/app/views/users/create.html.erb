@@ -1,0 +1,24 @@
+
+<div class="content-container signup-content-container">
+  <%= form_for :user, :url => { :action => 'create' }, :html=>{:class=>"user-form"} do |form| %>
+   <p>
+     <%= form.label :email %><br>
+     <%= form.text_field :email %>
+   </p>
+    <p>
+     <%= form.label :password %><br>
+     <%= form.password_field :pass %>
+   </p>
+    <p>
+     <%= form.label :name %><br>
+     <%= form.text_field :name %>
+   </p>
+    <p>
+     <%= form.label 'last name' %><br>
+     <%= form.text_field :lname %>
+   </p>
+    <p>
+     <%= form.submit 'Sign up' %>
+   </p>
+   <% end %>
+</div>

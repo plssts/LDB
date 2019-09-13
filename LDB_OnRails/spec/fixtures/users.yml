@@ -1,0 +1,11 @@
+Tomas:
+ name: Tomas
+ lname: Greblys
+ email: tg@gmail.com
+ pass: p4ssw0rd
+
+Antanas:
+ name: Antanas
+ lname: Rope
+ email: ar@gmail.com
+ pass: p4ssw1rd

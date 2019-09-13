@@ -1,0 +1,8 @@
+
+tst:
+  name: tst
+  manager: tst
+  members:
+  - tst
+  - tst
+  status: Suspended

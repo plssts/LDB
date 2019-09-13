@@ -1,0 +1,23 @@
+<div class="content-container default-content-container">
+<%= form_for :material, :url => { :action => 'addof' }, :html=>{:class=>"user-form"} do |form| %>
+ <p>
+   <%= form.label :name %><br>
+   <%= form.select :name, Provider.new(name: 's').all_names %>
+ </p>
+  <p>
+   <%= form.label :material %><br>
+   <%= form.text_field :material %>
+ </p>
+  <p>
+   <%= form.label 'ppu (price per unit)' %><br>
+   <%= form.text_field :ppu %>
+ </p>
+  <p>
+   <%= form.label :unit %><br>
+   <%= form.text_field :unit %>
+ </p>
+  <p>
+   <%= form.submit 'Add offer' %>
+ </p>
+<% end %>
+</div>

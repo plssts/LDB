@@ -1,0 +1,41 @@
+<div class="content-container default-content-container">
+<%= form_for :order, :url => { :action => 'create' }, :html=>{:class=>"user-form"} do |form| %>
+ <p>
+   <%= form.label :provider %><br>
+   <%= form.text_field :provider, :value => params[:provider], :readonly => :true %>
+ </p>
+  <p>
+   <%= form.label :material %><br>
+   <%= form.text_field :material, :value => params[:material], :readonly => :true %>
+ </p>
+  <p>
+   <%= form.label 'project id' %><br>
+   <%= form.select :projid, Project.all.ids %>
+ </p>
+  <p>
+   <%= form.label 'qty (quantity)' %><br>
+   <%= form.text_field :qty %>
+ </p>
+  <p>
+   <%= form.label 'unit (pcs, kg, l...)' %><br>
+   <%= form.text_field :unit %>
+ </p>
+  <p>
+   <%= form.label 'contact name' %><br>
+   <%= form.text_field :contactname %>
+ </p>
+  <p>
+   <%= form.label 'account to transfer to' %><br>
+   <%= form.text_field :recvaccount %>
+ </p>
+  <p>
+   <%= form.label :vat %><br>
+   <%= form.text_field :vat %>
+ </p>
+  <p>
+   <%= hidden_field_tag(:ppu, params[:ppu].to_f) %>
+   <%= form.submit 'Order' %>
+ </p>
+<% end %>
+
+</div>

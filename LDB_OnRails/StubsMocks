@@ -1,0 +1,15 @@
+3 stubs on NotesManager;	4 mocks on NotesManager;
+1 stubs on User;		1 mocks on User;
+1 stubs on Project;		1 mocks on Project;
+2 stubs on Order;		2 mocks on Order;
+1 stubs on Provider;		2 mocks on Provider;
+2 stubs on UserManager;		2 mocks on UserManager;
+1 stubs on Search;		2 mocks on Search;
+1 stubs on Graph;		1 mocks on Graph;
+--------------------------------------------------------------
+4 stubs on UsersController;	5 mocks on UsersController;
+1 stubs on Views;
+				1 mocks on WelcomeController;
+3 stubs on WgsController;
+2 stubs on ProjectsController;	4 mocks on ProjectsController;
+

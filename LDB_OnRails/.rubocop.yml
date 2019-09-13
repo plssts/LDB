@@ -1,0 +1,41 @@
+require: 'rubocop-rspec'
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+  
+Layout/EndOfLine:
+  EnforcedStyle: native
+
+AllCops:
+  Exclude:
+    - 'application_record.rb'
+    - 'main/main.rb'
+    - 'main/submenus/*.rb'
+    - 'app/controllers/application_controller.rb'
+    - 'app/models/Gemfile'
+    - 'app/models/Rakefile'
+    - 'app/models/config.ru'
+    - 'app/models/application_record.rb'
+    - 'app/channels/application_cable/*'
+    - 'app/helpers/*'
+    - 'app/mailers/*'
+    - 'app/jobs/*'
+    - 'spec/spec_helper.rb'
+    - 'spec/models/Rakefile'
+    - 'spec/models/config.ru'
+    - 'spec/rails_helper.rb'
+    - 'bin/*'
+    - 'db/*'
+    - 'test/controllers/*'
+    - 'test/*'
+    - 'config/*'
+    - 'config/initializers/*'
+    - 'config/environments/*'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'config.ru'
+
+# Disabling _any_instance_of: controllers supply instance-based methods
+# that are called without actual object during get/post requests.
+RSpec/AnyInstance:
+  Enabled: false

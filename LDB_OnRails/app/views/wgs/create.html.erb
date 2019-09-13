@@ -1,0 +1,22 @@
+<div class="content-container default-content-container">
+<%= form_for :wg, :url => { :action => 'create' }, :html=>{:class=>"user-form"} do |form| %>
+ <p>
+   <%= form.label :projid %><br>
+   <%= form.select :projid, Project.all.ids %>
+ </p>
+
+  <p>
+   <%= form.label :name %><br>
+   <%= form.text_field :name %>
+ </p>
+
+  <p>
+   <%= form.label :budget %><br>
+   <%= form.text_field :budget %>
+ </p>
+
+  <p>
+   <%= form.submit 'Create' %>
+ </p>
+<% end %>
+</div>
